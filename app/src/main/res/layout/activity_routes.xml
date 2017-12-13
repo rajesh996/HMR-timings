@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/routes_background">
+
+
+    <TextView
+        android:id="@+id/routes_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select one route from below"
+        android:textColor="@android:color/white"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_marginTop="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/Miya_Ngl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:text="Miyapur to L.B.Nagar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_green_light"
+        android:textColor="@android:color/black"
+        android:onClick="traintimings"
+        android:padding="5sp"
+        android:paddingLeft="3sp"/>
+
+    <Button
+        android:id="@+id/Ngl_Miya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Nagole to Shilparamam"
+        android:layout_below="@+id/Miya_Ngl"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:onClick="traintimings2"
+        android:padding="5sp"
+        android:paddingRight="3sp"/>
+
+    <Button
+        android:id="@+id/about_Metro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="About metro"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_below="@id/Ngl_Miya"
+        android:layout_centerHorizontal="true"
+        android:onClick="metro"/>
+
+
+</RelativeLayout>
